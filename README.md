@@ -1,6 +1,6 @@
 # Core Community Call 8 Notes
 
-Meeting Date/Time: Friday, October 27th, 2023 19:00 UTC
+Meeting Date/Time: Friday, October 20th, 2023 19:00 UTC
 
 Meeting Duration: 22 mins
 
