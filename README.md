@@ -31,7 +31,7 @@ Joe: Cool, sounds good. Thanks, Jacob. Hey, guys, I'm Joe. For those of you who 
 
 Jacob: Go for it.
 
-## \***\*Discussion 1: Introduction to [SIMD](https://github.com/solana-foundation/solana-improvement-documents/pull/72) Proposal**
+## Discussion 1: Introduction to [SIMD](https://github.com/solana-foundation/solana-improvement-documents/pull/72) Proposal
 
 **Joe**: Yeah. I'm not gonna go through every crazy nit-bit detail, but we can talk about the key points and stuff, whatever you guys kind of want to jam on. But basically, this is the proposal here. If someone could provide the [link](https://github.com/buffalojoec/solana-improvement-documents/blob/simd-feature-gate-threshold-automation/proposals/0072-feature-gate-threshold-automation.md), that'd be great. The whole idea is to basically create a process that is going to be like automated for kind of doing what we already have laid out with like the manual process for activating a feature. So like, right now, you would run like `solana feature activate`, and you're supposed to have like 95% of stake before you do that, right before like you try to activate a certain feature on a certain version. But it’s kind of up to you as like a person to go make sure, like a CLI will check for you. But you are supposed to make sure that that stake support is there.
 
@@ -51,7 +51,7 @@ This is what that would look like, there’s going to be an instruction that I s
 
 And so just like the activation will still kind of work the same in a way there just be that check for the stake support, so this is like where things are a little bit dicey because it’s you know computationally intensive but or can be basically it will walk these accounts to tally up all the stake support and then only activate the ones that have the support. But once it knows who, like once we’ve tallied up who has the support um the rest is kind of like the same. Like it’ll run the activations that have been written into the code um so that’s like the proposal. There’s some alternatives I’ve included in here to.
 
-## \***\*Discussion 2: Alternative Approaches\*\***
+## Discussion 2: Alternative Approaches
 
 Like one alternative is we could sort of like not use two PDAs we could use just one, but that kind of makes things dicey with like the timing of when these signals go out and another you know alternative as well is we could not use transactions we can instead use the block header but there doesn’t seem to be like a ton of support for that idea. But um, I would love to sort of open up the conversation to just any thoughts on this. Especially considering like the multi client world we’re going to be in. Want to make sure that everybody has like a voice on this and we can kind of figure out what looks best for this. So, anybody um have any questions to start here.
 
@@ -73,7 +73,7 @@ VIDEO **[06:11](https://youtu.be/DOaQ_VBFyIw?si=A7ysRRHXiO1clO-q&t=371)**
 
 **Liam**: I can't remember if vote accounts actually contain the current actor State.
 
-## \***\*Discussion 3: Governance and Compatibility\*\***
+## Discussion 3: Governance and Compatibility
 
 VIDEO **[09:44](https://youtu.be/DOaQ_VBFyIw?si=A7ysRRHXiO1clO-q&t=584)**
 
